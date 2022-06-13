@@ -1,10 +1,10 @@
-version: '3'
 services:
   app:
-    build: .
+    build:
+      context: .
     volumes:
       - .:/usr/src/app/
-    command:
+    command: 
       - scripts/start_app.sh
     ports:
       - "8000:8000"
