@@ -8,4 +8,5 @@ urlpatterns = [
   path('new', views.CreateView.as_view(), name='create'),
   path('update/<int:pk>', views.UpdateView.as_view(), name='update'),
   path('delete/<int:pk>', views.DeleteView.as_view(), name='delete'),
+  path('about/', views.AboutView.as_view(), name='about'),
 ]

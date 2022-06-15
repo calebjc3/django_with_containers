@@ -2,6 +2,7 @@ import imp
 from django.views import generic
 from django.urls import reverse_lazy
 from .models import Greeting
+from django.views.generic import TemplateView
 
 # Create your views here.
 
@@ -30,3 +31,6 @@ class DeleteView(generic.edit.DeleteView):
   template_name = 'greetings/delete.html'
   model = Greeting
   success_url = reverse_lazy('greetings:index')
+
+class AboutView(TemplateView):
+  template_name = 'greetings/about.html'

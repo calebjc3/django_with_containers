@@ -1,3 +1,4 @@
+<h1>Greetings</h1>
 {% if greeting_list %}
   <ul>
   {% for greeting in greeting_list %}
@@ -10,6 +11,7 @@
   <p>No greetings at this time.</p>
 {% endif %}
 <a href="{% url 'greetings:create' %}">Create a New Greeting!</a>
+<br><a href="{% url 'greetings:about' %}">Click Here to Know More</a>
 <p>
 
 
